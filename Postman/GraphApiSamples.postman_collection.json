@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "9235b6e2-0828-4e2c-ae0f-959f48a78555",
+		"name": "GraphApiSamples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10115139"
+	},
+	"item": [
+		{
+			"name": "GraphApi Samples Get Entra Groups",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TenantUId\": \"Tenant ID Goes here - Supports Multi-tenants\",\r\n    \"SearchString\": \"\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://graphapisamples.azurewebsites.net/api/Groups?code=E0QG6k5ULxHuG8tR5Y8VmZ-i9tGljjCozkuia9PrYd0LAzFuLhD3xA%3D%3D",
+					"protocol": "https",
+					"host": [
+						"graphapisamples",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Groups"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "E0QG6k5ULxHuG8tR5Y8VmZ-i9tGljjCozkuia9PrYd0LAzFuLhD3xA%3D%3D"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GraphApi Samples Get Entra Group",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TenantUId\": \"Tenant ID Goes here - Supports Multi-tenants\",\r\n    \"GroupType\": 4,\r\n    \"MaxRowCount\": 60,\r\n    \"SearchString\": \"d\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://graphapisamples.azurewebsites.net/api/Group?code=E0QG6k5ULxHuG8tR5Y8VmZ-i9tGljjCozkuia9PrYd0LAzFuLhD3xA%3D%3D",
+					"protocol": "https",
+					"host": [
+						"graphapisamples",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Group"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "E0QG6k5ULxHuG8tR5Y8VmZ-i9tGljjCozkuia9PrYd0LAzFuLhD3xA%3D%3D"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GraphApi Samples Get Entra Users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TenantUId\": \"Tenant ID Goes here - Supports Multi-tenants\",\r\n    \"SearchString\": \"\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://graphapisamples.azurewebsites.net/api/Users?code=-zcpiB0zP-u4E6HA1M0MSG9HMqvQub3li_CA-wph2XomAzEuNEQEsw%3D%3D",
+					"protocol": "https",
+					"host": [
+						"graphapisamples",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Users"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "-zcpiB0zP-u4E6HA1M0MSG9HMqvQub3li_CA-wph2XomAzEuNEQEsw%3D%3D"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GraphApi Samples Get Entra User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TenantUId\": \"Tenant ID Goes here - Supports Multi-tenants\",\r\n    \"SearchString\": \"me\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://graphapisamples.azurewebsites.net/api/User?code=Rd5D_jRIRzy4_pZbFllgyT76tMPnCQsUdWNTYpwnadEDAzFukWJw6A%3D%3D",
+					"protocol": "https",
+					"host": [
+						"graphapisamples",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"User"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "Rd5D_jRIRzy4_pZbFllgyT76tMPnCQsUdWNTYpwnadEDAzFukWJw6A%3D%3D"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
